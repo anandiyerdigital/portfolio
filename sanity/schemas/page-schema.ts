@@ -21,6 +21,11 @@ const page = {
       of: [
         { type: "block" }
       ]
+    },
+    {
+      name:"code",
+      type:"code",
+      title:"embedcode",
     }
   ]
 }

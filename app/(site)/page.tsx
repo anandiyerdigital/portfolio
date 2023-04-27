@@ -10,9 +10,16 @@ export default async function Home() {
       <h1 className="text-7xl font-extrabold">Hello I&apos;m
         <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent"> Anand Iyer!</span>
       </h1>
-      <p className="mt-3 text-xl text-gray-600">Aloha everyone! Check out my projects!</p>
-      <h2 className="mt-24 font-bold text-gray-700 text-3xl">My Projects</h2>
+      <p className="mt-3 text-gray-600">
+      I'm a full-stack developer with 5+ years of experience in creating scalable and user-friendly web applications. Skilled in JavaScript and Python, I'm proficient in frameworks like React, Next.js, and Node.js. My back-end expertise includes working with databases, RESTful APIs, and server-side languages.
 
+A lifelong learner, I actively contribute to open-source projects and stay informed on industry trends. If you're seeking a dedicated and adaptable developer for your next project, let's connect and build something amazing together!
+      </p>
+      
+      {/* <p className="mt-3 text-xl text-gray-600">Aloha everyone! Check out my projects!</p> */}
+      
+      <h2 className="mt-14 font-bold text-gray-700 text-3xl">My Projects</h2>
+     
       <div className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-8">{projects.map((project) => (
         <Link href={`/projects/${project.slug}`} key={project._id} className="border-2 border-gray-500 rounded-lg p-1 hover:scale-105 hover:border-blue-500 transition">
           {project.image && (

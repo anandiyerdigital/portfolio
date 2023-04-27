@@ -5,5 +5,6 @@ export type Page = {
   _createdAt: Date,
   title: string,
   slug: string,
+  code: string,
   content: PortableTextBlock[]
 };
