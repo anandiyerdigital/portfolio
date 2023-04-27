@@ -4,17 +4,18 @@ import Link from 'next/link'
 
 export default async function Home() {
   const projects = await getProjects();
+  const intro = ` I'm a full-stack developer with 5+ years of experience in creating scalable and user-friendly web applications. Skilled in JavaScript and Python, I'm proficient in frameworks like React, Next.js, and Node.js. My back-end expertise includes working with databases, RESTful APIs, and server-side languages.
+
+  A lifelong learner, I actively contribute to open-source projects and stay informed on industry trends. If you're seeking a dedicated and adaptable developer for your next project, let's connect and build something amazing together!`
 
   return (
     <div>
       <h1 className="text-7xl font-extrabold">Hello I&apos;m
         <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent"> Anand Iyer!</span>
       </h1>
-      {/* <p className="mt-3 text-gray-600">
-      I'm a full-stack developer with 5+ years of experience in creating scalable and user-friendly web applications. Skilled in JavaScript and Python, I'm proficient in frameworks like React, Next.js, and Node.js. My back-end expertise includes working with databases, RESTful APIs, and server-side languages.
-
-A lifelong learner, I actively contribute to open-source projects and stay informed on industry trends. If you're seeking a dedicated and adaptable developer for your next project, let's connect and build something amazing together!
-      </p> */}
+      <p className="mt-3 text-gray-600">
+        {intro}
+      </p>
       
       {/* <p className="mt-3 text-xl text-gray-600">Aloha everyone! Check out my projects!</p> */}
       
